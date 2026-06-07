@@ -3,8 +3,8 @@
 This framework evaluates AI-generated answers using three focused tests that target the most common failure modes: fake sources, unsupported claims, and logical inconsistency.
 
 ---
-
-## 1. Verifiable Evidence Test (VET)
+## Tests
+### 1. Verifiable Evidence Test (VET)
 
 Checks whether citations, URLs, studies, reports, or organizations mentioned in the answer actually exist and can be verified.
 
@@ -15,7 +15,7 @@ AI models often generate convincing but fake references. VET ensures all externa
 
 ---
 
-## 2. Claim Support Test (CST)
+### 2. Claim Support Test (CST)
 
 Checks whether factual statements (statistics, dates, rankings, causal claims, measurements) are supported by evidence.
 
@@ -26,7 +26,7 @@ Models frequently assert facts without justification. CST ensures claims are gro
 
 ---
 
-## 3. Consistency Test (CT)
+### 3. Consistency Test (CT)
 
 Checks whether the answer is logically consistent and free from contradictions.
 
@@ -37,7 +37,7 @@ Even accurate facts can become unreliable if the response contradicts itself or 
 
 ---
 
-## Why these three?
+### Why these three?
 
 | Test | Focus |
 |------|------|
@@ -46,3 +46,7 @@ Even accurate facts can become unreliable if the response contradicts itself or 
 | CT  | Logical consistency |
 
 Together, they cover the three main hallucination risks in AI responses: **fake evidence, unsupported facts, and internal inconsistency**.
+
+## LLM
+The LLM used for evaluating the AI responses is GROQ.
+
